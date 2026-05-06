@@ -43,13 +43,15 @@ const students = [
     },
 ];
 
-const failed = students.filter((student) => {
-    if(student.marks < 40) {
-        return true;
-    }
-    else {
-        return false;
-    }
-});
+// const failed = students.filter((student) => {
+//     if(student.marks < 40) {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// });
+
+const failed = students.filter((student) => student.marks < 40);
 
 console.log(failed);
