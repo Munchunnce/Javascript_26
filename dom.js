@@ -9,5 +9,9 @@
 // console.log(heading);
 
 // 3. getElementsByClassName
-const heading = document.getElementsByClassName('heading');;
+// const heading = document.getElementsByClassName('heading');;
+// console.log(heading);
+
+// 4. querySelector
+const heading = document.querySelector('#heading');
 console.log(heading);
