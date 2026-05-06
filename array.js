@@ -17,7 +17,12 @@ const actors = [
 //     actors[i].payment = actors[i].payment - 50;
 // }
 
-actors.forEach((actor) => {
-    actor.payment = actor.payment - 30;
-})
+// actors.forEach((actor) => {
+//     actor.payment = actor.payment - 30;
+// })
+
+// for of loop
+for( let actor of actors) {
+    actor.payment = actor.payment -20;
+}
 console.log(actors);
