@@ -5,5 +5,9 @@
 // console.log(heading);
 
 // 2. getElementsByTagName
-const heading = document.getElementsByTagName('h1');
+// const heading = document.getElementsByTagName('h1');
+// console.log(heading);
+
+// 3. getElementsByClassName
+const heading = document.getElementsByClassName('heading');;
 console.log(heading);
