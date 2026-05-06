@@ -28,20 +28,20 @@
 // console.log(actors);
 
 
-const students = [
-    {
-        name: 'Vimal',
-        marks: 80,
-    },
-    {
-        name: 'shikha',
-        marks: 40,
-    },
-    {
-        name: 'Shiwangi',
-        marks: 32,
-    },
-];
+// const students = [
+//     {
+//         name: 'Vimal',
+//         marks: 80,
+//     },
+//     {
+//         name: 'shikha',
+//         marks: 40,
+//     },
+//     {
+//         name: 'Shiwangi',
+//         marks: 32,
+//     },
+// ];
 
 // const failed = students.filter((student) => {
 //     if(student.marks < 40) {
@@ -52,6 +52,30 @@ const students = [
 //     }
 // });
 
-const failed = students.filter((student) => student.marks < 40);
+// const failed = students.filter((student) => student.marks < 40);
 
-console.log(failed);
+// console.log(failed);
+
+// map method
+const names = [
+    {
+        fname: 'Vimal',
+        lname: 'Chaudhary',
+    },
+    {
+        fname: 'Shikha',
+        lname: 'Chaudhary',
+    },
+    {
+        fname: 'Shiwangi',
+        lname: 'Chaudhary',
+    },
+];
+
+const fullNames = names.map((name) => {
+    return {
+        fullname: `${name.fname} ${name.lname}`,
+    }
+});
+
+console.log(fullNames);
