@@ -57,25 +57,53 @@
 // console.log(failed);
 
 // map method
-const names = [
+// const names = [
+//     {
+//         fname: 'Vimal',
+//         lname: 'Chaudhary',
+//     },
+//     {
+//         fname: 'Shikha',
+//         lname: 'Chaudhary',
+//     },
+//     {
+//         fname: 'Shiwangi',
+//         lname: 'Chaudhary',
+//     },
+// ];
+
+// const fullNames = names.map((name) => {
+//     return {
+//         fullname: `${name.fname} ${name.lname}`,
+//     }
+// });
+
+// console.log(fullNames);
+
+// Reduce
+const movies = [
     {
-        fname: 'Vimal',
-        lname: 'Chaudhary',
+        name: 'Interstellar',
+        budget: 500,
     },
     {
-        fname: 'Shikha',
-        lname: 'Chaudhary',
+        name: 'Inception',
+        budget: 300,
     },
     {
-        fname: 'Shiwangi',
-        lname: 'Chaudhary',
-    },
+        name: 'Tenet',
+        budget: 400,
+    }
 ];
 
-const fullNames = names.map((name) => {
-    return {
-        fullname: `${name.fname} ${name.lname}`,
-    }
-});
+// let total = 0;
 
-console.log(fullNames);
+// movies.forEach((movie) => {
+//     total = total + movie.budget;
+// });
+
+const total =movies.reduce((acc, movie) => {
+  acc =  acc + movie.budget;
+  return acc;
+}, 0);
+console.log(total);
