@@ -13,7 +13,11 @@ const actors = [
     },
 ];
 
-for(let i = 0; i < actors.length; i++) {
-    actors[i].payment = actors[i].payment - 50;
-}
+// for(let i = 0; i < actors.length; i++) {
+//     actors[i].payment = actors[i].payment - 50;
+// }
+
+actors.forEach((actor) => {
+    actor.payment = actor.payment - 30;
+})
 console.log(actors);
